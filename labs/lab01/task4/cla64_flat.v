@@ -2274,6 +2274,6 @@ assign #(2) c[64] = g[63]
   // Step 3: sum bits
   // ---------------------------------------------------------------------
   assign #(2) sum = p ^ {c[63:1], cin};
-  assign #(2) cout=c[64];
+  assign #(2) cout = c[64];
 
 endmodule
