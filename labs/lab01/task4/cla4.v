@@ -1,4 +1,6 @@
 // cla4.v
+// (Carried forward from Task 3 -- paste in your completed, delay-annotated
+// version.)
 // Gate-level 4-bit carry-lookahead adder, matching the lecture circuit.
 // Every gate needs an explicit delay (constant is fine here, e.g. #(2)) --
 // this is the default from Task 2 onward, not a special step.
@@ -34,7 +36,7 @@ module cla4(
   // TODO: your gate-level P/G, carry, and sum logic goes here.
   // (cout should be connected to c4.) Remember the delay on every gate.
 
-  wire t1;
+wire t1;
   wire t2, t3;
   wire t4, t5, t6;
   wire t7, t8, t9, t10;
@@ -73,5 +75,5 @@ module cla4(
   xor #(2) (sum[3], p3, c3);
 
   assign cout = c4;
-
+  
 endmodule
